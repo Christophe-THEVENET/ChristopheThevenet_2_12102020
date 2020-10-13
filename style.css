@@ -99,13 +99,12 @@ body {
   margin: 2rem 0;
   min-height: 285px;
   background-color: blueviolet;
-  
 }
 
 h2 {
   font-size: 2.1rem;
   font-weight: bolder;
-  margin-bottom: 0.8rem;
+  margin-bottom: -1rem;
   padding-top: 1rem;
 }
 
@@ -113,35 +112,106 @@ p {
   font-size: 1.5rem;
 }
 
+/*outil de recherche de ville*/
+
 #outil_recherche_bloc {
   display: flex;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  border: 1px solid black;
-  width:40rem;
+  width: 40rem;
   height: 5rem;
-  
 }
+
+#outil_icone_div {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  flex: 10%;
+  background-color: var(--gris);
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  text-align: center;
+  line-height: 5.5rem;
+  font-size: 2rem;
+}
+
+#outil_champ_div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  flex: 50%;
+}
+
+#outil_bouton_div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  flex: 30%;
+  background-color: var(--bleu);
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 4.8rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+#champ {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/*filtre 4 choix*/
 
 #filtre_bloc {
   display: flex;
+  justify-content: space-between;
   margin: 2rem 0;
-  border: 1px solid black;
   width: 70%;
   height: 5rem;
+  line-height: 5rem;
 }
 
 #filtre_texte_bloc {
+  width: 5rem;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
 }
 
 .filtre_ensemble_choix_bloc {
   display: flex;
+  width: 20%;
+  background-color: #fff;
+  border: 1px solid var(--gris);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2.2rem;
+  border-bottom-left-radius: 2.2rem;
 }
 
 .filtre_logo_choix_bloc {
+  width: 31%;
+  background-color: var(--bleu_clair);
+  border-radius: 50%;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 5rem;
+  color: var(--bleu);
 }
 
 .filtre_texte_choix_bloc {
+  width: 80%;
+  background-color: #fff;
+  border-top-right-radius: 2.2rem;
+  border-bottom-right-radius: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 #info_bloc {
