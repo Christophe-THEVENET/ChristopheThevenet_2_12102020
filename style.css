@@ -12,7 +12,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 1rem;
-  background-color: blue;
+  background-color: var(--bleu);
 }
 
 #page_marge {
