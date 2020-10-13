@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Réservia planifie vos vacances</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d000d3b662.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -44,6 +55,60 @@
         <section>
           <div id="recherche_bloc">
             <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>en plein centre ville ou en pleine nature</p>
+
+            <!-- outil de recherche de ville -->
+
+            <div id="outil_recherche_bloc">
+              <div id="outil_icone">
+                <i id="icone_localise" class="fas fa-map-marker-alt"></i>
+              </div>
+              <div id="outil_champ">
+                <input type="text" id="champ" name="text" />
+              </div>
+              <div id="outil_bouton"><div id="bouton">Rechercher</div></div>
+            </div>
+
+            <!-- filtre 4 choix -->
+
+            <div id="filtre_bloc">
+              <div id="filtre_texte_bloc">Filtres</div>
+
+              <div class="filtre_ensemble_choix_bloc">
+                <div class="filtre_logo_choix_bloc">
+                  <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="filtre_texte_choix-bloc">Economique</div>
+              </div>
+
+              <div class="filtre_ensemble_choix_bloc">
+                <div class="filtre_logo_choix_bloc">
+                  <i class="fas fa-child"></i>
+                </div>
+                <div class="filtre_texte_choix-bloc">Familial</div>
+              </div>
+
+              <div class="filtre_ensemble_choix_bloc">
+                <div class="filtre_logo_choix_bloc">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="filtre_texte_choix-bloc">Romantique</div>
+              </div>
+
+              <div class="filtre_ensemble_choix_bloc">
+                <div class="filtre_logo_choix_bloc">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <div class="filtre_texte_choix-bloc">Animaux autorisés</div>
+              </div>
+            </div>
+
+            <!-- derniere ligne info -->
+
+            <div id="info_bloc">
+              <div id="info_logo_bloc"></div>
+              <div id="info_texte_bloc"></div>
+            </div>
           </div>
         </section>
 

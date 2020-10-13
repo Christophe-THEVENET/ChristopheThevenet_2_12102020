@@ -26,9 +26,7 @@ body {
   margin: 0 5rem;
 }
 
-
 /* HEADER */
-
 
 #header_bloc {
   height: 9rem;
@@ -94,9 +92,7 @@ body {
   text-shadow: 0px -1px 1px rgb(121, 121, 121);
 }
 
-
 /* SECTION RECHERCHE */
-
 
 #recherche_bloc {
   width: 100%;
@@ -107,13 +103,47 @@ body {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 2.1rem;
   font-weight: bolder;
 }
 
+#outil_recherche_bloc {
+  display: flex;
+}
+
+#filtre_bloc {
+
+}
+
+#filtre_texte_bloc {
+
+}
+
+.filtre_ensemble_choix_bloc {
+
+}
+
+.filtre_logo_choix_bloc {
+
+}
+
+.filtre_texte_choix_bloc {
+
+}
+
+#info_bloc {
+
+}
+
+#info_logo_bloc {
+
+}
+
+#info_texte_bloc {
+  
+}
 
 /* SECTION HEBERGEMENTS */
-
 
 #hebergements_bloc {
   width: 100%;
@@ -122,10 +152,7 @@ h2 {
   background-color: rgb(36, 104, 53);
 }
 
-
 /* SECTION ACTIVITES */
-
-
 
 #activites_bloc {
   width: 100%;
@@ -134,9 +161,7 @@ h2 {
   background-color: rgb(197, 199, 107);
 }
 
-
 /* FOOTER */
-
 
 #footer_bloc {
   width: 100%;
