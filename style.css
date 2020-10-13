@@ -1,5 +1,77 @@
 html {
   font-size: 62.5%;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --bleu: #0065fc;
+  --bleu_clair: #deebff;
+  --gris: #f2f2f2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#page {
+  max-width: 142rem;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  background-color: var(--bleu);
+}
+
+#page_marge {
+  margin: 0 5rem;
+}
+
+#header_bloc {
+  background-color: rgb(229, 143, 143);
+  height: 9rem;
+  display: flex;
+}
+
+#logo_bloc {
+  flex-grow: 1;
+}
+
+#navigation_bloc ul {
+  display: flex;
+}
+
+#recherche_bloc {
+  width: 100%;
+  margin: 2rem auto;
+  min-height: 285px;
+  background-color: blueviolet;
+}
+
+#hebergements_bloc {
+  width: 100%;
+  margin: 20px auto;
+  min-height: 65rem;
+  background-color: rgb(36, 104, 53);
+}
+
+#activites_bloc {
+  width: 100%;
+  margin: 2rem auto;
+  min-height: 530px;
+  background-color: rgb(197, 199, 107);
+}
+
+#footer_bloc {
+  width: 100%;
+  min-height: 22rem;
+  margin-top: 2rem;
+  background-color: #f2f2f2;
+}
+
+
+
+html {
+  font-size: 62.5%;
 }
 
 body {
