@@ -103,6 +103,12 @@ body {
   margin: 2rem auto;
   min-height: 285px;
   background-color: blueviolet;
+  padding: 0.2rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: bolder;
 }
 
 
