@@ -214,7 +214,7 @@ p {
 }
 
 .filtre_logo_choix_bloc {
-  
+  width: 20%;
   background-color: var(--bleu_clair);
   border-radius: 50%;
   font-size: 2rem;
