@@ -19,33 +19,35 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 1rem;
-  background-color: rgb(245, 227, 227);
+  /* background-color: rgb(245, 227, 227);*/
 }
 
 #page_marge {
   margin: 0 5rem;
 }
 
-
 /* HEADER */
-
 
 #header_bloc {
   height: 9rem;
   display: flex;
-  padding: 0 1rem;
 }
 
 #logo_bloc {
   display: flex;
   flex: 69%;
+  padding-top: 2rem;
 }
 
+#menu_total_bloc {
+  display: flex;
+  justify-content: space-between;
+}
 #menu_bloc {
   flex: 31%;
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 2rem;
 }
 
 #menu_bloc ul {
@@ -59,6 +61,7 @@ body {
 
 #menu_bloc ul li {
   flex: 33.3%;
+  padding: 0 2rem;
 }
 
 .menu_lien_bloc {
@@ -87,27 +90,160 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1.7rem;
 }
+#lien_inscrire_bloc {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-align: center;
+  line-height: 11rem;
+}
 
 #lien_inscrire {
   color: var(--bleu);
   font-weight: 900;
   text-shadow: 0px -1px 1px rgb(121, 121, 121);
+  text-decoration: none;
+  font-size: 1.7rem;
 }
-
 
 /* SECTION RECHERCHE */
 
-
 #recherche_bloc {
   width: 100%;
-  margin: 2rem auto;
-  min-height: 285px;
-  background-color: blueviolet;
+  margin: 2rem 0;
+  /*min-height: 285px;*/
+  height: auto;
+  /*background-color: blueviolet;*/
 }
 
+h2 {
+  font-size: 2.1rem;
+  font-weight: bolder;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+/*outil de recherche de ville*/
+
+#outil_recherche_bloc {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  width: 40%;
+  min-width: 33rem;
+  height: 5rem;
+  border: 1px solid var(--gris);
+  border-radius: 1.5rem;
+}
+
+#outil_icone_div {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  flex: 10%;
+  background-color: var(--gris);
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+  text-align: center;
+  line-height: 5.5rem;
+  font-size: 2rem;
+}
+
+#outil_champ_div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  flex: 50%;
+}
+
+#outil_bouton_div {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  flex: 30%;
+  background-color: var(--bleu);
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-align: center;
+  line-height: 4.8rem;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+#champ {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/*filtre 4 choix*/
+
+#filtre_bloc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2rem 0;
+  width: 70%;
+  line-height: 5rem;
+}
+
+#filtre_texte_bloc {
+  width: 5rem;
+  padding-left: 2rem;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.filtre_ensemble_choix_bloc {
+  display: flex;
+  /*width: 20rem;*/
+  background-color: #fff;
+  border: 1px solid var(--gris);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-top-left-radius: 2.2rem;
+  border-bottom-left-radius: 2.2rem;
+}
+
+.filtre_logo_choix_bloc {
+  width: 31%;
+  background-color: var(--bleu_clair);
+  border-radius: 50%;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 5rem;
+  color: var(--bleu);
+}
+
+.filtre_texte_choix_bloc {
+  width: 80%;
+  background-color: #fff;
+  border-top-right-radius: 2.2rem;
+  border-bottom-right-radius: 2.2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#info_bloc {
+  display: flex;
+  margin: 2rem 0;
+}
+
+#info_logo_bloc {
+}
+
+#info_texte_bloc {
+}
 
 /* SECTION HEBERGEMENTS */
-
 
 #hebergements_bloc {
   width: 100%;
@@ -116,10 +252,7 @@ body {
   background-color: rgb(36, 104, 53);
 }
 
-
 /* SECTION ACTIVITES */
-
-
 
 #activites_bloc {
   width: 100%;
@@ -128,13 +261,78 @@ body {
   background-color: rgb(197, 199, 107);
 }
 
-
 /* FOOTER */
-
 
 #footer_bloc {
   width: 100%;
   min-height: 22rem;
   margin-top: 2rem;
   background-color: #f2f2f2;
+}
+
+@media screen and (max-width: 650px) {
+  /* HEADER */
+
+  #header_bloc {
+    flex-direction: column;
+    margin-bottom: 7rem;
+  }
+
+  #lien_inscrire_bloc {
+    position: relative;
+    top: -7.5rem;
+    right: 6rem;
+  }
+
+  .menu_lien_bloc:hover {
+    border-bottom: 0.2rem solid var(--bleu);
+    border-top: none;
+    height: 70%;
+  }
+
+  .menu_lien_bloc a:hover {
+    margin: 0;
+  }
+
+  /* SECTION RECHERCHE */
+
+  #filtre_texte_bloc {
+    width: 10rem;
+  }
+
+  h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 4rem;
+  }
+
+  /* outil recherche*/
+
+  #outil_recherche_bloc {
+    margin: auto;
+    padding-top: 1rem;
+    border: 1px solid var(--gris);
+    padding: 0;
+    border-radius: 1.5rem;
+  }
+
+  #bouton {
+    font-size: 0;
+  }
+
+  #outil_bouton_div {
+    flex: 1%;
+    padding-right: 2.5rem;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius: 1.5rem;
+  }
+
+  #bouton::before {
+    content: url(logo/search-3-32.png);
+    position: absolute;
+    margin-top: 1rem;
+  }
 }

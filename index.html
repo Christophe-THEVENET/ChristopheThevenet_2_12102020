@@ -5,7 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Réservia planifie vos vacances</title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"/>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d000d3b662.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -21,20 +32,22 @@
             <div id="logo_bloc">
               <img src="logo/Reservia.svg" alt="logo Reservia" />
             </div>
-            <div id="menu_bloc">
-              <ul>
-                <li>
-                  <div class="menu_lien_bloc"><a href="#">Hébergements</a></div>
-                </li>
-                <li>
-                  <div class="menu_lien_bloc"><a href="#">Activités</a></div>
-                </li>
-                <li>
-                  <div class="menu_lien_bloc">
-                    <a href="#" id="lien_inscrire">S'inscrire</a>
-                  </div>
-                </li>
-              </ul>
+            <div id="menu_total_bloc">
+              <div id="menu_bloc">
+                <ul>
+                  <li>
+                    <div class="menu_lien_bloc">
+                      <a href="#">Hébergements</a>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="menu_lien_bloc"><a href="#">Activités</a></div>
+                  </li>
+                </ul>
+              </div>
+              <div id="lien_inscrire_bloc">
+                <a href="#" id="lien_inscrire">S'inscrire</a>
+              </div>
             </div>
           </div>
         </header>
@@ -42,7 +55,70 @@
         <!-- SECTION RECHERCHE -->
 
         <section>
-          <div id="recherche_bloc"></div>
+          <div id="recherche_bloc">
+            <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+            <p>En plein centre ville ou en pleine nature</p>
+
+            <!-- outil de recherche de ville -->
+
+            <div id="outil_recherche_bloc">
+              <div id="outil_icone_div">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div id="outil_champ_div">
+                <input
+                  type="text"
+                  id="champ"
+                  name="text"
+                  placeholder="   Marseille, France"
+                />
+              </div>
+              <div id="outil_bouton_div"><div id="bouton">Rechercher</div></div>
+            </div>
+
+            <!-- filtre 4 choix -->
+
+            <div id="filtre_bloc">
+              <div id="filtre_texte_bloc">Filtres</div>
+
+              <div class="filtre_ensemble_choix_bloc">
+                <div class="filtre_logo_choix_bloc">
+                  <i class="fas fa-money-bill-wave"></i>
+                </div>
+                <div class="filtre_texte_choix_bloc">Economique</div>
+              </div>
+
+              <div class="filtre_ensemble_choix_bloc">
+                <div class="filtre_logo_choix_bloc">
+                  <i class="fas fa-child"></i>
+                </div>
+                <div class="filtre_texte_choix_bloc">Familial</div>
+              </div>
+
+              <div class="filtre_ensemble_choix_bloc">
+                <div class="filtre_logo_choix_bloc">
+                  <i class="fas fa-heart"></i>
+                </div>
+                <div class="filtre_texte_choix_bloc">Romantique</div>
+              </div>
+
+              <div class="filtre_ensemble_choix_bloc">
+                <div class="filtre_logo_choix_bloc">
+                  <i class="fas fa-dog"></i>
+                </div>
+                <div class="filtre_texte_choix_bloc">Animaux autorisés</div>
+              </div>
+            </div>
+
+            <!-- derniere ligne info -->
+
+            <div id="info_bloc">
+              <div id="info_logo_bloc"><i class="fas fa-info-circle"></i></div>
+              <div id="info_texte_bloc">
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+              </div>
+            </div>
+          </div>
         </section>
 
         <!-- SECTION HEBERGEMENTS -->
