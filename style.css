@@ -19,7 +19,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 1rem;
-  /* background-color: rgb(245, 227, 227);*/
+  background-color: rgb(245, 227, 227);
 }
 
 #page_marge {
@@ -111,9 +111,8 @@ body {
 #recherche_bloc {
   width: 100%;
   margin: 2rem 0;
-  /*min-height: 285px;*/
   height: auto;
-  /*background-color: blueviolet;*/
+  background-color: blueviolet;
 }
 
 h2 {
@@ -192,6 +191,7 @@ p {
   margin: 2rem 0;
   width: 70%;
   line-height: 5rem;
+  background-color: rgb(167, 71, 71);
 }
 
 #filtre_texte_bloc {
@@ -203,9 +203,10 @@ p {
 
 .filtre_ensemble_choix_bloc {
   display: flex;
-  /*width: 20rem;*/
+  padding: 0.5rem;
+  margin: 0.5rem;
   background-color: #fff;
-  border: 1px solid var(--gris);
+  border: 2px solid var(--gris);
   border-top-right-radius: 2rem;
   border-bottom-right-radius: 2rem;
   border-top-left-radius: 2.2rem;
@@ -213,7 +214,7 @@ p {
 }
 
 .filtre_logo_choix_bloc {
-  width: 31%;
+  
   background-color: var(--bleu_clair);
   border-radius: 50%;
   font-size: 2rem;
@@ -223,7 +224,7 @@ p {
 }
 
 .filtre_texte_choix_bloc {
-  width: 80%;
+  
   background-color: #fff;
   border-top-right-radius: 2.2rem;
   border-bottom-right-radius: 2.2rem;
@@ -270,18 +271,38 @@ p {
   background-color: #f2f2f2;
 }
 
+
+
+
+
+/* MEDIA QUERIES MOBILE */
+
+
+
+
 @media screen and (max-width: 650px) {
   /* HEADER */
+
+  #page_marge {
+    margin: 0 1rem;
+  }
 
   #header_bloc {
     flex-direction: column;
     margin-bottom: 7rem;
   }
 
+  #menu_bloc ul {
+    
+    width: 150%;
+  }
+  #menu_lien_bloc {
+    flex: 100%;
+  }
   #lien_inscrire_bloc {
     position: relative;
-    top: -7.5rem;
-    right: 6rem;
+    top: -7.2rem;
+    right: 2rem;
   }
 
   .menu_lien_bloc:hover {
@@ -294,20 +315,29 @@ p {
     margin: 0;
   }
 
+
+
   /* SECTION RECHERCHE */
+
+
 
   #filtre_texte_bloc {
     width: 10rem;
   }
 
   h2 {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
     margin-bottom: 1rem;
+    margin-right: 7rem;
+    margin-left: 2rem;
   }
 
   p {
     margin-bottom: 4rem;
+    margin-left: 2rem;
   }
+ 
+ 
 
   /* outil recherche*/
 
