@@ -19,7 +19,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 1rem;
-  background-color: rgb(245, 227, 227);
+  /*background-color: rgb(245, 227, 227);*/
 }
 
 #page_marge {
@@ -112,7 +112,7 @@ body {
   width: 100%;
   margin: 2rem 0;
   height: auto;
-  background-color: blueviolet;
+  /*background-color: blueviolet;*/
 }
 
 h2 {
@@ -123,7 +123,7 @@ h2 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 /*outil de recherche de ville*/
@@ -132,7 +132,7 @@ p {
   display: flex;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  width: 40%;
+  width: 30%;
   min-width: 33rem;
   height: 5rem;
   border: 1px solid var(--gris);
@@ -189,32 +189,31 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 2rem 0;
-  width: 70%;
+  width: 75%;
   line-height: 5rem;
-  background-color: rgb(167, 71, 71);
+  /*background-color: rgb(167, 71, 71);*/
 }
 
 #filtre_texte_bloc {
-  width: 5rem;
-  padding-left: 2rem;
-  font-size: 1.6rem;
+  padding-top: 0.7rem;
+  font-size: 1.8rem;
   font-weight: bold;
 }
 
 .filtre_ensemble_choix_bloc {
   display: flex;
-  padding: 0.5rem;
-  margin: 0.5rem;
+  margin: 0.5rem 1.5rem;
   background-color: #fff;
-  border: 2px solid var(--gris);
-  border-top-right-radius: 2rem;
-  border-bottom-right-radius: 2rem;
-  border-top-left-radius: 2.2rem;
-  border-bottom-left-radius: 2.2rem;
+  border: 2px solid rgb(214, 214, 214);
+  border-top-right-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  border-top-left-radius: 2.5rem;
+  border-bottom-left-radius: 2.5rem;
 }
 
 .filtre_logo_choix_bloc {
-  width: 20%;
+  width: 5rem;
+  margin-left: -0.4rem;
   background-color: var(--bleu_clair);
   border-radius: 50%;
   font-size: 2rem;
@@ -224,24 +223,39 @@ p {
 }
 
 .filtre_texte_choix_bloc {
-  
   background-color: #fff;
-  border-top-right-radius: 2.2rem;
-  border-bottom-right-radius: 2.2rem;
-  font-size: 1.5rem;
+  border-top-right-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  text-align: center;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
+
+/* derniere ligne info */
 
 #info_bloc {
   display: flex;
-  margin: 2rem 0;
 }
 
 #info_logo_bloc {
+  margin-right: 1rem;
+}
+
+#info_bloc i {
+  font-size: 2.2rem;
+  color: white;
+  background-color: var(--bleu);
+  border-radius: 50%;
+  border: 1px solid var(--gris);
+  margin-left: 2rem;
 }
 
 #info_texte_bloc {
+}
+
+#info_texte_bloc p {
+  margin: 0.3rem;
 }
 
 /* SECTION HEBERGEMENTS */
@@ -271,14 +285,7 @@ p {
   background-color: #f2f2f2;
 }
 
-
-
-
-
 /* MEDIA QUERIES MOBILE */
-
-
-
 
 @media screen and (max-width: 650px) {
   /* HEADER */
@@ -293,8 +300,8 @@ p {
   }
 
   #menu_bloc ul {
-    
     width: 150%;
+    margin-top: -1.5rem;
   }
   #menu_lien_bloc {
     flex: 100%;
@@ -315,11 +322,11 @@ p {
     margin: 0;
   }
 
-
-
   /* SECTION RECHERCHE */
 
-
+  #recherche_bloc {
+    margin-top: -1rem;
+  }
 
   #filtre_texte_bloc {
     width: 10rem;
@@ -333,11 +340,9 @@ p {
   }
 
   p {
-    margin-bottom: 4rem;
+    margin-bottom: 2.5rem;
     margin-left: 2rem;
   }
- 
- 
 
   /* outil recherche*/
 
@@ -364,5 +369,23 @@ p {
     content: url(logo/search-3-32.png);
     position: absolute;
     margin-top: 1rem;
+  }
+
+  /* SECTION FILTRES 4 CHOIX */
+
+  #filtre_bloc {
+    width: 100%;
+  }
+
+  #filtre_texte_bloc {
+    margin-bottom: -0.5rem;
+    padding-left: 2rem;
+    margin-right: 20rem;
+    margin-top: -0.6rem;
+  }
+
+  .filtre_ensemble_choix_bloc {
+    flex: none;
+    margin-bottom: 1rem;
   }
 }
