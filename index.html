@@ -63,7 +63,7 @@
 
             <div id="outil_recherche_bloc">
               <div id="outil_icone_div">
-                <i class="fas fa-map-marker-alt"></i>
+                <i class="fas fa-map-marker-alt" id="icone_geolocalisation"></i>
               </div>
               <div id="outil_champ_div">
                 <input
@@ -115,7 +115,9 @@
             <!-- derniere ligne info -->
 
             <div id="info_bloc">
-              <div id="info_logo_bloc"><i class="fas fa-info-circle"></i></div>
+              <div id="info_logo_bloc">
+                <i class="fas fa-info-circle" id="icone_information"></i>
+              </div>
               <div id="info_texte_bloc">
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
               </div>
@@ -126,96 +128,138 @@
         <!-- SECTION HEBERGEMENTS -->
 
         <section>
-          <div id="hebergements_bloc">
+          <div id="heberge_bloc">
+            <!-- --- -->
+            <!-- bloc gauche -->
 
-            <div id="hebergement_gauche_bloc">
-              <div id="hebergement_gauche_sou_bloc">
+            <div id="heberge_gauche_bloc">
+              <div id="heberge_gauche_sou_bloc">
+                <h2 id="hebergement_gauche_titre">Hébergements à Marseille</h2>
 
-                <h2>Hébergements à Marseille</h2>
+                <div id="heberge_gauche_ensemble_carte">
+                  <div class="heberge_gauche_carte_bloc">
+                    <div class="heberge_img_gauche_bloc">
+                      <img
+                        class="heberge_img_carte_gauche"
+                        src="img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+                        alt="photo_hebergement_marseille_auberge_la_cannebiere"
+                      />
+                    </div>
+                    <h4>Auberge la Cannebière</h4>
+                    <p class="heberge_gauche_carte_texte">
+                      Nuit à partir de <span>25&euro;</span>
+                    </p>
+                    <div id="icone_etoile_bloc">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                    </div>
+                  </div>
 
-                <div id="hebergement_gauche_ensemble_carte">
-                  <div class="hebergement_gauche_carte_bloc">
-                    <div>
-                      <img src="img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_hebergement_marseille_marcus"/>
+                  <div class="heberge_gauche_carte_bloc">
+                    <div class="heberge_img_gauche_bloc">
+                      <img
+                        class="heberge_img_carte_gauche"
+                        src="img_hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+                        alt="photo_hebergement_marseille_hotel_du_port"
+                      />
                     </div>
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <span>25&euro;</span></p>
+                    <h4>Hôtel du port</h4>
+                    <p class="heberge_gauche_carte_texte">
+                      Nuit à partir de 52<span>&euro;</span>
+                    </p>
                     <div id="icone_etoile_bloc">
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="far fa-star" icone_etoile_vide></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
                     </div>
                   </div>
-                  <div class="hebergement_gauche_carte_bloc">
-                    <div>
-                      <img src="img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_hebergement_marseille_marcus"/>
+
+                  <div class="heberge_gauche_carte_bloc">
+                    <div class="heberge_img_gauche_bloc">
+                      <img
+                        class="heberge_img_carte_gauche"
+                        src="img_hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+                        alt="photo_hebergement_marseille_hotel_des_mouettes"
+                      />
                     </div>
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <span>25&euro;</span></p>
+                    <h4>Hôtel Les mouettes</h4>
+                    <p class="heberge_gauche_carte_texte">
+                      Nuit à partir de 76<span>&euro;</span>
+                    </p>
                     <div id="icone_etoile_bloc">
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="far fa-star" icone_etoile_vide></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
                     </div>
                   </div>
-                  <div class="hebergement_gauche_carte_bloc">
-                    <div>
-                      <img src="img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_hebergement_marseille_marcus"/>
+
+                  <div class="heberge_gauche_carte_bloc">
+                    <div class="heberge_img_gauche_bloc">
+                      <img
+                        class="heberge_img_carte_gauche"
+                        src="img_hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                        alt="photo_hebergement_marseille_hotel_de_la_mer"
+                      />
                     </div>
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <span>25&euro;</span></p>
+                    <h4>Hôtel de la mer</h4>
+                    <p class="heberge_gauche_carte_texte">
+                      Nuit à partir de 46<span>&euro;</span>
+                    </p>
                     <div id="icone_etoile_bloc">
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="far fa-star" icone_etoile_vide></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
+                      <i class="far fa-star"></i>
                     </div>
                   </div>
-                  <div class="hebergement_gauche_carte_bloc">
-                    <div>
-                      <img src="img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_hebergement_marseille_marcus"/>
+
+                  <div class="heberge_gauche_carte_bloc">
+                    <div class="heberge_img_gauche_bloc">
+                      <img
+                        class="heberge_img_carte_gauche"
+                        src="img_hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+                        alt="photo_hebergement_marseille_le_panier"
+                      />
                     </div>
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <span>25&euro;</span></p>
+                    <h4>Auberge le Panier</h4>
+                    <p class="heberge_gauche_carte_texte">
+                      Nuit à partir de <span>23&euro;</span>
+                    </p>
                     <div id="icone_etoile_bloc">
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="far fa-star" icone_etoile_vide></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="far fa-star"></i>
                     </div>
                   </div>
-                  <div class="hebergement_gauche_carte_bloc">
-                    <div>
-                      <img src="img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_hebergement_marseille_marcus"/>
+
+                  <div class="heberge_gauche_carte_bloc">
+                    <div class="heberge_img_gauche_bloc">
+                      <img
+                        class="heberge_img_carte_gauche"
+                        src="img_hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+                        alt="photo_hebergement_marseille_amina"
+                      />
                     </div>
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <span>25&euro;</span></p>
+                    <h4>Hôtel chez Amina</h4>
+                    <p class="heberge_gauche_carte_texte">
+                      Nuit à partir de 96<span>&euro;</span>
+                    </p>
                     <div id="icone_etoile_bloc">
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="far fa-star" icone_etoile_vide></i>
-                    </div>
-                  </div>
-                  <div class="hebergement_gauche_carte_bloc">
-                    <div>
-                      <img src="img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo_hebergement_marseille_marcus"/>
-                    </div>
-                    <h4>Auberge la Cannebière</h4>
-                    <p>Nuit à partir de <span>25&euro;</span></p>
-                    <div id="icone_etoile_bloc">
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="fas fa-star" icone_etoile_pleine></i>
-                      <i class="far fa-star" icone_etoile_vide></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
                     </div>
                   </div>
                 </div>
@@ -223,8 +267,18 @@
               </div>
             </div>
 
-            <div id="hebergement_droit_bloc">
-              <div id="hebergement_bloc_droit_div">droit</div>
+            <!-- --- -->
+            <!-- bloc droit -->
+
+            <div id="heberge_droit_bloc">
+              <div id="heberge_droit_sou_bloc">
+
+                <div id="heberge_droit_titreETicone_bloc">
+                  <h2 id="heberge_droit_titre">Les plus populaires</h2>
+                  <i class="fas fa-chart-line" id="icone_graphique"></i>
+                </div>
+                
+              </div>
             </div>
           </div>
         </section>
