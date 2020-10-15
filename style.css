@@ -112,7 +112,6 @@ body {
   width: 100%;
   margin: 2.5rem 0;
   height: auto;
-  /*background-color: blueviolet;*/
 }
 
 h2 {
@@ -180,6 +179,10 @@ p {
   margin: 0;
   padding: 0;
   border: none;
+  font-weight: bold;
+  font-family: 'raleway';
+  font-size: 1.6rem;
+  padding-left: 2rem;
 }
 
 /*filtre 4 choix*/
@@ -191,9 +194,8 @@ p {
   margin: 2rem 0;
   width: 75%;
   line-height: 5rem;
-  /*background-color: rgb(167, 71, 71);*/
 }
-
+²
 #filtre_texte_bloc {
   padding-top: 0.7rem;
   font-size: 1.8rem;
@@ -273,8 +275,27 @@ p {
   margin: 1rem 0;
   margin-right: 2rem;
   border-radius: 2rem;
-  
-  
+}
+
+#hebergement_gauche_sou_bloc {
+  background-color: rgb(209, 155, 155);
+  height: 88%;
+  margin: 4rem;
+  display: flex;
+}
+
+#hebergement_gauche_ensemble_carte {
+
+}
+
+.hebergement_gauche_carte_bloc img {
+  width: 30rem;
+}
+
+#hebergement_bloc_droit_div {
+  background-color: rgb(209, 155, 155);
+  height: 88%;
+  margin: 4rem;
 }
 
 #hebergement_droit_bloc {
