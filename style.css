@@ -221,7 +221,6 @@ p {
 .filtre_ensemble_choix_bloc:hover {
   color: var(--bleu);
   transform: scale(1.1);
-  
 }
 
 .filtre_logo_choix_bloc {
@@ -272,7 +271,6 @@ p {
 #heberge_bloc {
   width: 100%;
   margin: 2rem auto;
-  /*background-color: rgb(36, 104, 53);*/
   display: flex;
 }
 
@@ -353,7 +351,6 @@ h3 {
 
 #heberge_droit_bloc {
   background-color: var(--gris);
-  min-height: 60rem;
   flex: 1;
   margin: 1rem 0;
   margin-left: 2rem;
@@ -544,6 +541,8 @@ h3 {
     padding: 1.5rem;
   }
 
+  /* bloc gauche */
+
   #heberge_gauche_sou_bloc {
     margin: 0.8rem;
   }
@@ -562,5 +561,25 @@ h3 {
 
   h3 {
     margin-left: 2rem;
+  }
+
+  /* bloc droit */
+
+  #heberge_droit_bloc {
+    margin-left: 0;
+    margin-right: 2rem;
+  }
+
+  #heberge_droit_sou_bloc {
+    margin: 0.8rem;
+    padding-bottom: 2rem;
+  }
+
+  #heberge_droit_ensemble_carte {
+    margin-left: 2%;
+  }
+
+  .heberge_droit_carte_bloc {
+    margin-bottom: 1.2rem;
   }
 }
