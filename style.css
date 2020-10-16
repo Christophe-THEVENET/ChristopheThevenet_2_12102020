@@ -414,28 +414,92 @@ h3 {
   width: 100%;
   margin: 5rem auto;
   min-height: 53rem;
-  background-color: rgb(197, 199, 107);
 }
 
 #activites_ensemble_carte_bloc {
   display: flex;
   justify-content: space-between;
-  margin-top: 2rem;
+  flex-wrap: wrap;
+  margin-top: 3.2rem;
 }
 
 .activites_colonne_carte_bloc {
-  background-color: rgb(221, 122, 122);
   width: 30rem;
-
+  height: 45rem;
+  overflow: hidden;
+  border-radius: 1.8rem;
+  box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
 }
 
-.activites_carte_gros_bloc {
 
+   /* grosse carte */
+
+
+.activites_carte_gros_image {
+  width: 30rem;
+  height: 39rem;
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
 }
 
-.activites_carte-moyen_bloc {
-
+.activites_carte_gros_texte_bloc {
+  margin-top: 2.2rem;
+  margin-left: 2rem;
 }
+
+/* moyenne carte */
+
+.activites_colonne_moyen_carte_bloc {
+  box-shadow: none;
+}
+
+.activites_ensemble_moyen_carte_bloc {
+  width: 30rem;
+  height: 24rem;
+  box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
+  border-radius: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+.activites_moyen_carte_bgimage_bloc {
+  background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-size: 30rem;
+  background-position: center;
+  height: 18rem;
+  border-top-right-radius: 1.8rem;
+  border-top-left-radius: 1.8rem;
+} 
+
+.activites_moyen_carte_texte {
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+/* petite carte */
+
+.activites_ensemble_petite_carte_bloc {
+  width: 30rem;
+  height: 16rem;
+  box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
+  border-radius: 1.8rem;
+}
+
+.activites_petite_carte_bgimage_bloc {
+  background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-size: 30rem;
+  background-position: center;
+  height: 10rem;
+  border-top-right-radius: 1.8rem;
+  border-top-left-radius: 1.8rem;
+} 
+
+.activites_petite_carte_texte {
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+
+
 
 
 
