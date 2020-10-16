@@ -412,10 +412,33 @@ h3 {
 
 #activites_bloc {
   width: 100%;
-  margin: 2rem auto;
+  margin: 5rem auto;
   min-height: 53rem;
   background-color: rgb(197, 199, 107);
 }
+
+#activites_ensemble_carte_bloc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.activites_colonne_carte_bloc {
+  background-color: rgb(221, 122, 122);
+  width: 30rem;
+
+}
+
+.activites_carte_gros_bloc {
+
+}
+
+.activites_carte-moyen_bloc {
+
+}
+
+
+
 
 /* FOOTER */
 
