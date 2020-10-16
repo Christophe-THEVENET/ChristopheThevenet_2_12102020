@@ -410,10 +410,12 @@ h3 {
 
 /* SECTION ACTIVITES */
 
+
 #activites_bloc {
   width: 100%;
   margin: 5rem auto;
   min-height: 53rem;
+  margin-bottom: 0rem;
 }
 
 #activites_ensemble_carte_bloc {
@@ -423,7 +425,9 @@ h3 {
   margin-top: 3.2rem;
 }
 
-.activites_colonne_carte_bloc {
+  /* grande carte */
+
+.grande_carte_colonne {
   width: 30rem;
   height: 45rem;
   overflow: hidden;
@@ -431,29 +435,26 @@ h3 {
   box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
 }
 
-
-   /* grosse carte */
-
-
-.activites_carte_gros_image {
+.grande_carte_image_bloc {
+  background-image: url(img_activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
   width: 30rem;
   height: 39rem;
   border-top-left-radius: 1.8rem;
   border-top-right-radius: 1.8rem;
 }
 
-.activites_carte_gros_texte_bloc {
+.grande_carte_texte {
   margin-top: 2.2rem;
   margin-left: 2rem;
 }
 
 /* moyenne carte */
 
-.activites_colonne_moyen_carte_bloc {
+.moyenne_petite_carte_colonne {
   box-shadow: none;
 }
 
-.activites_ensemble_moyen_carte_bloc {
+.moyenne_carte_bloc {
   width: 30rem;
   height: 24rem;
   box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
@@ -461,45 +462,47 @@ h3 {
   margin-bottom: 5rem;
 }
 
-.activites_moyen_carte_bgimage_bloc {
+.moyenne_carte_image_bloc {
   background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
   background-size: 30rem;
-  background-position: center;
+  background-position-y: 33rem;
   height: 18rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
 } 
 
-.activites_moyen_carte_texte {
+.moyenne_carte_texte {
   padding-top: 1.5rem;
   padding-left: 0.5rem;
 }
 
 /* petite carte */
 
-.activites_ensemble_petite_carte_bloc {
+.petite_carte_bloc {
   width: 30rem;
   height: 16rem;
   box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
   border-radius: 1.8rem;
 }
 
-.activites_petite_carte_bgimage_bloc {
-  background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+.petite_carte_image_bloc {
+  background-image: url(img_activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
   background-size: 30rem;
-  background-position: center;
+  background-position-y: 17.5rem;
   height: 10rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
 } 
 
-.activites_petite_carte_texte {
+.petite_carte_texte {
   padding-top: 1.5rem;
   padding-left: 0.5rem;
 }
 
 
-
+.pcb_haut {
+  margin-bottom: 5rem;
+}
 
 
 
