@@ -219,7 +219,9 @@ p {
 }
 
 .filtre_ensemble_choix_bloc:hover {
-  transform: scale(1.1);
+  color: var(--bleu);
+  box-shadow: 0px 0px 10px -5px var(--bleu);
+  border: 2px solid white;
 }
 
 .filtre_logo_choix_bloc {
@@ -351,8 +353,6 @@ h3 {
 
 /* bloc droit */
 
-
-
 #heberge_droit_bloc {
   background-color: var(--gris);
   min-height: 60rem;
@@ -368,21 +368,28 @@ h3 {
   margin: 4rem;
 }
 
-#heberge_droit_titre {
-
-}
-
 #heberge_droit_titreETicone_bloc {
   display: flex;
   justify-content: space-between;
+  padding: 1.1rem;
 }
 
+#heberge_droit_titre {
+  margin: 0;
+  padding: 0;
+}
 
 #icone_graphique {
   text-align: right;
   font-size: 2rem;
   color: #000;
 }
+
+
+
+
+
+
 
 /* SECTION ACTIVITES */
 
