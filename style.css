@@ -285,7 +285,6 @@ p {
 }
 
 #heberge_gauche_sou_bloc {
-  /*background-color: rgb(209, 155, 155);*/
   margin: 4rem;
 }
 
@@ -297,7 +296,6 @@ p {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  /*background-color: rgb(75, 65, 65);*/
 }
 
 .heberge_gauche_carte_bloc {
@@ -386,7 +384,16 @@ h3 {
 }
 
 
+.heberge_droit_carte_bloc {
+  display: flex;
+  width: 35rem;
+background-color: #fff;
 
+}
+
+.heberge_droit_carte_img_bloc {
+  width: 20rem;
+}
 
 
 
