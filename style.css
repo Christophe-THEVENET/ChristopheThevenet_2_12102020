@@ -220,8 +220,8 @@ p {
 
 .filtre_ensemble_choix_bloc:hover {
   color: var(--bleu);
-  box-shadow: 0px 0px 10px -5px var(--bleu);
-  border: 2px solid white;
+  transform: scale(1.1);
+  
 }
 
 .filtre_logo_choix_bloc {
@@ -305,7 +305,7 @@ p {
   border-radius: 1.8rem;
   background-color: #fff;
   cursor: pointer;
-  box-shadow: 1px 1px 10px 1px rgb(162, 162, 162);
+  box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
 }
 
 .heberge_img_carte_gauche {
@@ -361,7 +361,6 @@ h3 {
 }
 
 #heberge_droit_sou_bloc {
-  background-color: rgb(209, 155, 155);
   height: 88%;
   margin: 4rem;
 }
@@ -370,6 +369,7 @@ h3 {
   display: flex;
   justify-content: space-between;
   padding: 1.1rem;
+  margin-bottom: 1.5rem;
 }
 
 #heberge_droit_titre {
@@ -383,20 +383,33 @@ h3 {
   color: #000;
 }
 
-
 .heberge_droit_carte_bloc {
+  padding: 0.4rem;
+  border-radius: 2rem;
+  box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
+  margin-bottom: 3.8rem;
   display: flex;
   width: 35rem;
-background-color: #fff;
-
+  height: 13rem;
+  background-color: #fff;
 }
 
 .heberge_droit_carte_img_bloc {
-  width: 20rem;
+  width: 13rem;
+  height: 13rem;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
 }
 
+.heberge_droit_carte_texte_bloc {
+  width: 17rem;
+  margin-top: 0.6rem;
+}
 
-
+.heberge_droit_carte_texte {
+  margin-left: 1.5rem;
+  margin-bottom: 4rem;
+}
 
 /* SECTION ACTIVITES */
 
