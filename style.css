@@ -410,7 +410,6 @@ h3 {
 
 /* SECTION ACTIVITES */
 
-
 #activites_bloc {
   width: 100%;
   margin: 5rem auto;
@@ -425,7 +424,7 @@ h3 {
   margin-top: 3.2rem;
 }
 
-  /* grande carte */
+/* grande carte */
 
 .grande_carte_colonne {
   width: 30rem;
@@ -469,7 +468,7 @@ h3 {
   height: 18rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
-} 
+}
 
 .moyenne_carte_texte {
   padding-top: 1.5rem;
@@ -492,20 +491,16 @@ h3 {
   height: 10rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
-} 
+}
 
 .petite_carte_texte {
   padding-top: 1.5rem;
   padding-left: 0.5rem;
 }
 
-
 .pcb_haut {
   margin-bottom: 5rem;
 }
-
-
-
 
 /* FOOTER */
 
