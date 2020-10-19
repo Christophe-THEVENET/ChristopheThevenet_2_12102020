@@ -431,7 +431,7 @@ h3 {
   background-color: #fff;
 }
 
-.heberge_droit_carte_img_bloc {
+.heberge_img_droit_bloc {
   width: 13rem;
   height: 13rem;
   border-bottom-left-radius: 2rem;
@@ -446,6 +446,25 @@ h3 {
 .heberge_droit_carte_texte {
   margin-left: 1.5rem;
   margin-bottom: 4rem;
+}
+
+.hotel_soleil_img {
+  background-image: url(img_hebergements/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+  background-size: 20rem;
+  background-position-x: -3rem;
+}
+
+.chambre_coeur_img {
+  background-image: url(img_hebergements/aw-creative-VGs8z60yT2c-unsplash.jpg);
+  background-size: 20rem;
+  background-position-x: -3rem;
+}
+
+.hotel_bleu_img {
+  background-image: url(img_hebergements/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+  background-size: 15rem;
+  background-position-y: -6rem;
+  background-position-x: -1.5rem;
 }
 
 /* SECTION ACTIVITES */
@@ -646,6 +665,34 @@ h3 {
   background-color: #f2f2f2;
 }
 
+#footer_bloc {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 5rem;
+}
+
+#footer_bloc div {
+  flex: 20%;
+}
+
+#footer_bloc h2 {
+  margin-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES MOBILE */
 
 @media screen and (max-width: 650px) {
@@ -802,4 +849,102 @@ h3 {
   .heberge_droit_carte_bloc {
     margin-bottom: 1.2rem;
   }
+
+
+  /* SECTION ACTIVITES*/
+
+
+#activites_ensemble_carte_bloc {
+  display: block;
+  margin-top: 0;
+  
+}
+
+/*#activites_ensemble_carte_bloc {
+  flex-direction: column;
+  
+}
+*/
+
+.colonne_responsive {
+  width: 40rem;
+  box-shadow: none;
+  height: auto;
+}
+
+
+.activites_responsive_carte {
+  width: 34rem;
+  height: 19rem; 
+  box-shadow: 5px 1px 10px -5px rgb(162, 162, 162);
+  border-radius: 1.8rem;
+  margin: 1.5rem auto;
+
+  
+}
+
+/* images en background */
+
+
+.vieux_port_img {
+  background-image: url(img_activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  width: 100%;
+  height: 13rem;
+  background-size: 34rem;
+  background-position-x: 34rem;
+  background-position-y:44rem;
+}
+
+.pomegues_img {
+  background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  width: 100%;
+  height: 13rem;
+  background-size: 35rem;
+  background-position-x: -35rem;
+  background-position-y:88rem;
+}
+
+.frioul_img {
+  background-image: url(img_activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  background-size: 100%;
+  background-position-y: 18.5rem;
+  background-position-x: 34rem;
+}
+
+.calanques_img {
+  background-image: url(img_activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  width: 100%;
+  height: 13rem;
+  background-size: 35rem;
+  background-position-x: 34rem;
+  background-position-y:43rem;
+}
+
+.notre_dame_img {
+  background-image: url(img_activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-size: 30rem;
+  background-position-y: 19rem;
+}
+
+.longchamp_img {
+  background-image: url(img_activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  width: 100%;
+  height: 13rem;
+  background-size: 35rem;
+  background-position-x: -35rem;
+  background-position-y:101rem;
+}
+
+
+
+
+/* FOOTER */
+
+
+#footer_bloc {
+  display: flex;
+  flex-direction: column;
+}
+
+
 }
