@@ -424,9 +424,9 @@ h3 {
   margin-top: 3.2rem;
 }
 
-/* grande carte */
+/* Vieux Port carte */
 
-.grande_carte_colonne {
+.colonne_1 {
   width: 30rem;
   height: 45rem;
   overflow: hidden;
@@ -434,26 +434,25 @@ h3 {
   box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
 }
 
-.grande_carte_image_bloc {
-  background-image: url(img_activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+.vieux_port_image_bloc {
   width: 30rem;
   height: 39rem;
   border-top-left-radius: 1.8rem;
   border-top-right-radius: 1.8rem;
 }
 
-.grande_carte_texte {
+.vieux_port_texte {
   margin-top: 2.2rem;
   margin-left: 2rem;
 }
 
-/* moyenne carte */
+/* Fort de Pomègues carte */
 
-.moyenne_petite_carte_colonne {
+.colonne_2 {
   box-shadow: none;
 }
 
-.moyenne_carte_bloc {
+.pomegues_bloc {
   width: 30rem;
   height: 24rem;
   box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
@@ -461,46 +460,144 @@ h3 {
   margin-bottom: 5rem;
 }
 
-.moyenne_carte_image_bloc {
-  background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-  background-size: 30rem;
-  background-position-y: 33rem;
+.pomegues_image_bloc {
   height: 18rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
 }
 
-.moyenne_carte_texte {
+.pomegues_texte {
   padding-top: 1.5rem;
   padding-left: 0.5rem;
 }
 
-/* petite carte */
+/* Îles du Frioul carte */
 
-.petite_carte_bloc {
+.frioul_bloc {
   width: 30rem;
   height: 16rem;
   box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
   border-radius: 1.8rem;
 }
 
-.petite_carte_image_bloc {
-  background-image: url(img_activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-  background-size: 30rem;
-  background-position-y: 17.5rem;
+.frioul_image_bloc {
   height: 10rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
 }
 
-.petite_carte_texte {
+.frioul_texte {
   padding-top: 1.5rem;
   padding-left: 0.5rem;
 }
 
-.pcb_haut {
+/* Parc National des Calanques carte */
+
+.colonne_3 {
+  width: 30rem;
+  height: 45rem;
+  overflow: hidden;
+  border-radius: 1.8rem;
+  box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
+}
+
+.calanques_image_bloc {
+  width: 30rem;
+  height: 39rem;
+  border-top-left-radius: 1.8rem;
+  border-top-right-radius: 1.8rem;
+}
+
+.calanques_texte {
+  margin-top: 2.2rem;
+  margin-left: 2rem;
+}
+
+/* Notre-Dame-de-la-Garde carte */
+
+.colonne_4 {
+  box-shadow: none;
+}
+
+.notre_dame_bloc {
+  width: 30rem;
+  height: 19rem;
+  box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
+  border-radius: 1.8rem;
   margin-bottom: 5rem;
 }
+
+.notre_dame_image_bloc {
+  height: 13rem;
+  border-top-right-radius: 1.8rem;
+  border-top-left-radius: 1.8rem;
+}
+
+.notre_dame_texte {
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+/* Parc Longchamp carte */
+
+.longchamp_bloc {
+  width: 30rem;
+  height: 21rem;
+  box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
+  border-radius: 1.8rem;
+  margin-bottom: 5rem;
+}
+
+.longchamp_image_bloc {
+  height: 15rem;
+  border-top-right-radius: 1.8rem;
+  border-top-left-radius: 1.8rem;
+}
+
+.longchamp_texte {
+  padding-top: 1.5rem;
+  padding-left: 0.5rem;
+}
+
+/* images en background */
+
+.vieux_port_img {
+  background-image: url(img_activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+  background-size: 65rem;
+  background-position-x: 110rem;
+}
+
+.pomegues_img {
+  background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+  background-size: 30rem;
+  background-position-y: 33rem;
+}
+
+.frioul_img {
+  background-image: url(img_activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+  background-size: 30rem;
+  background-position-y: 17.5rem;
+}
+
+.calanques_img {
+  background-image: url(img_activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+  background-size: 65rem;
+  background-position-x: 110rem;
+}
+
+.notre_dame_img {
+  background-image: url(img_activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+  background-size: 30rem;
+  background-position-y: 19rem;
+}
+
+.longchamp_img {
+  background-image: url(img_activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+  background-size: 30rem;
+  background-position-x: 30rem;
+}
+
+
 
 /* FOOTER */
 
