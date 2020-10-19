@@ -400,6 +400,7 @@ h3 {
 #heberge_droit_sou_bloc {
   height: 88%;
   margin: 4rem;
+  padding: 0 2rem;
 }
 
 #heberge_droit_titreETicone_bloc {
@@ -410,7 +411,7 @@ h3 {
 }
 
 #heberge_droit_titre {
-  margin: 0;
+  margin: 1rem 0;
   padding: 0;
 }
 
@@ -418,15 +419,16 @@ h3 {
   text-align: right;
   font-size: 2rem;
   color: #000;
+  margin: 1rem 0;
 }
 
-.heberge_droit_carte_bloc {
+#heberge_droit_ensemble_carte .heberge_droit_carte_bloc {
   padding: 0.4rem;
   border-radius: 2rem;
   box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
   margin-bottom: 3.8rem;
   display: flex;
-  width: 35rem;
+  width: 100%;
   height: 13rem;
   background-color: #fff;
 }
@@ -693,18 +695,29 @@ h3 {
 
 
 
+
+
+
+
+
+
+
 /* MEDIA QUERIES MOBILE */
 
 @media screen and (max-width: 650px) {
   /* HEADER */
 
   #page_marge {
-    margin: 0 1rem;
+    margin: 0;
   }
 
   #header_bloc {
     flex-direction: column;
     margin-bottom: 7rem;
+  }
+
+  #logo_bloc {
+    margin-left: 2rem;
   }
 
   #menu_bloc ul {
@@ -783,6 +796,7 @@ h3 {
 
   #filtre_bloc {
     width: 100%;
+    padding: 0.5rem;
   }
 
   #filtre_texte_bloc {
@@ -805,10 +819,14 @@ h3 {
 
   #heberge_bloc {
     flex-direction: column-reverse;
-    padding: 1.5rem;
+    padding: 0;
   }
 
   /* BLOC GAUCHE */
+
+  #heberge_gauche_bloc {
+    background-color: #fff;
+  }
 
   #heberge_gauche_sou_bloc {
     margin: 0.8rem;
@@ -834,7 +852,7 @@ h3 {
 
   #heberge_droit_bloc {
     margin-left: 0;
-    margin-right: 2rem;
+    border-radius: 0;
   }
 
   #heberge_droit_sou_bloc {
@@ -842,109 +860,112 @@ h3 {
     padding-bottom: 2rem;
   }
 
-  #heberge_droit_ensemble_carte {
-    margin-left: 2%;
-  }
-
   .heberge_droit_carte_bloc {
-    margin-bottom: 1.2rem;
+    
+    width: 90%;
+    margin-bottom: 0.5rem;
   }
 
+  .heberge_droit_carte_texte_bloc {
+      width: 50%;
+  }
 
+  .heberge_img_droit_bloc {
+    width: 35%;
+  }
   /* SECTION ACTIVITES*/
 
+  #activites_bloc h2 {
+    margin-left: 4rem;
+  }
 
-#activites_ensemble_carte_bloc {
-  display: block;
-  margin-top: 0;
-  
-}
+  #activites_ensemble_carte_bloc {
+    display: block;
+    margin-top: 0;
+    padding: 1rem;
+  }
 
-/*#activites_ensemble_carte_bloc {
-  flex-direction: column;
-  
-}
-*/
+  .colonne_responsive {
+    width: 40rem;
+    box-shadow: none;
+    height: auto;
+  }
 
-.colonne_responsive {
-  width: 40rem;
-  box-shadow: none;
-  height: auto;
-}
+  .activites_responsive_carte {
+    width: 34rem;
+    height: 19rem;
+    box-shadow: -1px 1px 10px -3px rgb(162, 162, 162);
+    border-radius: 1.8rem;
+    margin: 2rem auto;
+  }
 
+  .pomegues_bloc {
+    margin-bottom: 3.5rem;
+  }
 
-.activites_responsive_carte {
-  width: 34rem;
-  height: 19rem; 
-  box-shadow: 5px 1px 10px -5px rgb(162, 162, 162);
-  border-radius: 1.8rem;
-  margin: 1.5rem auto;
+  .notre_dame_bloc {
+    margin-bottom: 3.5rem;
+  }
 
-  
-}
+  /* images en background */
 
-/* images en background */
+  .vieux_port_img {
+    background-image: url(img_activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    width: 100%;
+    height: 13rem;
+    background-size: 34rem;
+    background-position-x: 34rem;
+    background-position-y: 44rem;
+  }
 
+  .pomegues_img {
+    background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    width: 100%;
+    height: 13rem;
+    background-size: 35rem;
+    background-position-x: -35rem;
+    background-position-y: 88rem;
+  }
 
-.vieux_port_img {
-  background-image: url(img_activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
-  width: 100%;
-  height: 13rem;
-  background-size: 34rem;
-  background-position-x: 34rem;
-  background-position-y:44rem;
-}
+  .frioul_img {
+    background-image: url(img_activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: 100%;
+    background-position-y: 18.5rem;
+    background-position-x: 34rem;
+  }
 
-.pomegues_img {
-  background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
-  width: 100%;
-  height: 13rem;
-  background-size: 35rem;
-  background-position-x: -35rem;
-  background-position-y:88rem;
-}
+  .calanques_img {
+    background-image: url(img_activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    width: 100%;
+    height: 13rem;
+    background-size: 35rem;
+    background-position-x: 34rem;
+    background-position-y: 43rem;
+  }
 
-.frioul_img {
-  background-image: url(img_activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
-  background-size: 100%;
-  background-position-y: 18.5rem;
-  background-position-x: 34rem;
-}
+  .notre_dame_img {
+    background-image: url(img_activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: 30rem;
+    background-position-y: 19rem;
+  }
 
-.calanques_img {
-  background-image: url(img_activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
-  width: 100%;
-  height: 13rem;
-  background-size: 35rem;
-  background-position-x: 34rem;
-  background-position-y:43rem;
-}
+  .longchamp_img {
+    background-image: url(img_activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    width: 100%;
+    height: 13rem;
+    background-size: 35rem;
+    background-position-x: -35rem;
+    background-position-y: 101rem;
+  }
 
-.notre_dame_img {
-  background-image: url(img_activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-  background-size: 30rem;
-  background-position-y: 19rem;
-}
+  /* FOOTER */
 
-.longchamp_img {
-  background-image: url(img_activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
-  width: 100%;
-  height: 13rem;
-  background-size: 35rem;
-  background-position-x: -35rem;
-  background-position-y:101rem;
-}
+  #footer_bloc {
+    display: flex;
+    flex-direction: column;
+  }
 
-
-
-
-/* FOOTER */
-
-
-#footer_bloc {
-  display: flex;
-  flex-direction: column;
-}
-
-
+  #footer_bloc p {
+    line-height: 0.5rem;
+  }
 }
