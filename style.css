@@ -274,6 +274,8 @@ p {
   display: flex;
 }
 
+/*BLOC GAUCHE*/
+
 #heberge_gauche_bloc {
   background-color: var(--gris);
   flex: 2.1;
@@ -306,9 +308,9 @@ p {
   box-shadow: 1px 1px 10px -5px rgb(162, 162, 162);
 }
 
-.heberge_img_carte_gauche {
+.heberge_img_gauche_bloc {
   width: 24rem;
-  height: 11rem;
+  height: 12rem;
   border-top-left-radius: 1.8rem;
   border-top-right-radius: 1.8rem;
 }
@@ -347,7 +349,45 @@ h3 {
   font-weight: bolder;
 }
 
-/* bloc droit */
+/* activites images en background */
+
+.cannebiere_img {
+  background-image: url(img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+  background-size: 25rem;
+  background-position-y: -2rem;
+}
+
+.hotel_du_port_img {
+  background-image: url(img_hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+  background-size: 25rem;
+  background-position-y: -2rem;
+}
+
+.mouettes_img {
+  background-image: url(img_hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+  background-size: 25rem;
+  background-position-y: -2rem;
+}
+
+.hotel_de_la_mer_img {
+  background-image: url(img_hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+  background-size: 25rem;
+  background-position-y: -5rem;
+}
+
+.auberge_panier_img {
+  background-image: url(img_hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+  background-size: 25rem;
+  background-position-y: -1rem;
+}
+
+.hotel_amina_img {
+  background-image: url(img_hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+  background-size: 25rem;
+  background-position-y: 25rem;
+}
+
+/* BLOC DROIT */
 
 #heberge_droit_bloc {
   background-color: var(--gris);
@@ -597,8 +637,6 @@ h3 {
   background-position-x: 30rem;
 }
 
-
-
 /* FOOTER */
 
 #footer_bloc {
@@ -723,7 +761,7 @@ h3 {
     padding: 1.5rem;
   }
 
-  /* bloc gauche */
+  /* BLOC GAUCHE */
 
   #heberge_gauche_sou_bloc {
     margin: 0.8rem;
@@ -737,7 +775,7 @@ h3 {
     width: 33rem;
   }
 
-  .heberge_img_carte_gauche {
+  .heberge_img_gauche_bloc {
     width: 33rem;
   }
 
@@ -745,7 +783,7 @@ h3 {
     margin-left: 2rem;
   }
 
-  /* bloc droit */
+  /* BLOC DROIT */
 
   #heberge_droit_bloc {
     margin-left: 0;
