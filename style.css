@@ -298,6 +298,12 @@ p {
   flex-wrap: wrap;
 }
 
+#heberge_gauche_ensemble_carte a {
+  text-decoration: none;
+  color: #000;
+
+}
+
 .heberge_gauche_carte_bloc {
   width: 24rem;
   padding: 0.4rem;
@@ -440,6 +446,11 @@ h3 {
   align-items: center;
 }
 
+#heberge_droit_ensemble_carte a {
+  text-decoration: none;
+  color: #000;
+}
+
 .heberge_img_droit_bloc {
   width: 13rem;
   height: 13rem;
@@ -489,6 +500,11 @@ h3 {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 3.2rem;
+}
+
+#activites_ensemble_carte_bloc a {
+  text-decoration: none;
+  color: #000;
 }
 
 /* Vieux Port carte */
