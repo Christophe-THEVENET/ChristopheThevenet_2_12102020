@@ -270,11 +270,14 @@ p {
 }
 
 #icone_information {
-  font-size: 2.2rem;
-  color: white;
-  background-color: var(--bleu);
+  font-size: 1.2rem;
+  height: 2rem;
+ width: 1.5rem;
+  border: 1px solid rgb(208, 208, 208);
   border-radius: 50%;
-  border: 1px solid var(--gris);
+  padding-left: 1rem;
+  padding-top: 0.5rem;
+ 
 }
 
 #info_texte_bloc p {
@@ -918,9 +921,14 @@ RESPONSIVE MOBILE
     align-items: flex-start;
   }
 
+  #info_bloc {
+    padding-left: 1.5rem;
+  }
+
   #info_bloc i {
     margin-left: 1rem;
   }
+
 
   /*SECTION HEBERGEMENTS*/
 
