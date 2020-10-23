@@ -130,8 +130,7 @@ p {
   display: flex;
   margin-top: 2rem;
   margin-bottom: 3rem;
-  width: 30%;
-  min-width: 33rem;
+  width: 40rem;
   height: 5rem;
   border: 1px solid var(--gris);
   border-radius: 1.5rem;
@@ -192,7 +191,6 @@ p {
 #filtre_bloc {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 2rem 0;
   width: 75%;
   line-height: 5rem;
@@ -215,6 +213,20 @@ p {
   border-top-left-radius: 2.5rem;
   border-bottom-left-radius: 2.5rem;
   cursor: pointer;
+}
+
+#filtre_gauche_bloc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#filtre_droit_bloc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .filtre_ensemble_choix_bloc:hover {
@@ -729,7 +741,7 @@ h3 {
 /*
 
 
-
+RESPONSIVE TABLETTE
 
 
 
@@ -757,7 +769,25 @@ h3 {
   .colonne_responsive {
     margin-bottom: 4rem;
   }
+
+  #filtre_bloc {
+    width: 80%;
+  }
 }
+/*
+
+
+
+
+
+RESPONSIVE MOBILE
+
+
+
+
+
+
+*/
 
 @media screen and (max-width: 719px) {
   /* HEADER */
@@ -826,6 +856,7 @@ h3 {
 
   #outil_recherche_bloc {
     margin: auto;
+    width: 30rem;
     padding-top: 1rem;
     border: 1px solid var(--gris);
     padding: 0;
@@ -853,12 +884,11 @@ h3 {
 
   #filtre_bloc {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 2rem 0;
-    width: 75%;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 2rem 1rem;
+    width: 80%;
     line-height: 5rem;
-    margin: 1rem auto;
   }
 
   #filtre_texte_bloc {
@@ -869,9 +899,18 @@ h3 {
   }
 
   .filtre_ensemble_choix_bloc {
-    flex: none;
     margin-bottom: 1rem;
     padding: 0;
+  }
+
+  #filtre_gauche_bloc {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #filtre_droit_bloc {
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   #info_bloc i {
