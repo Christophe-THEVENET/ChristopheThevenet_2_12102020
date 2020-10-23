@@ -35,7 +35,7 @@ body {
 #logo_bloc {
   display: flex;
   flex: 69%;
-  padding-top: 2rem;
+  padding-top: 3.5rem;
 }
 
 #menu_total_bloc {
@@ -74,6 +74,7 @@ body {
 .menu_lien_bloc:hover {
   border-top: 0.2rem solid var(--bleu);
   color: var(--bleu);
+  font-weight: 500;
 }
 
 .menu_lien_bloc a:hover {
@@ -89,6 +90,7 @@ body {
   font-family: "Raleway", sans-serif;
   font-size: 1.7rem;
 }
+
 #lien_inscrire_bloc {
   width: 100%;
   height: 100%;
@@ -114,7 +116,7 @@ body {
 }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 2.2rem;
   font-weight: bolder;
   margin-bottom: -1rem;
   padding-top: 1rem;
@@ -297,30 +299,28 @@ p {
   border-radius: 2rem;
 }
 
-#heberge_gauche_sou_bloc {
-  margin: 3rem;
-}
-
 #hebergement_gauche_titre {
-  margin-bottom: 0.8rem;
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 #heberge_gauche_ensemble_carte {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
 #heberge_gauche_ensemble_carte a {
   text-decoration: none;
   color: #000;
-  margin: 2rem auto;
+  margin: 0;
 }
 
 .heberge_gauche_carte_bloc {
   width: 24rem;
   padding: 0.4rem;
-  margin: 2rem auto;
+  margin: 1.8rem 1.53rem;
   border-radius: 1.8rem;
   background-color: #fff;
   box-shadow: 1px 1px 10px -3px rgb(162, 162, 162);
@@ -343,6 +343,8 @@ h4 {
 
 h3 {
   font-size: 1.6rem;
+  margin-left: 3rem;
+  margin-top: 3rem;
 }
 .heberge_gauche_carte_texte {
   font-size: 1.4rem;
@@ -416,16 +418,16 @@ h3 {
 }
 
 #heberge_droit_sou_bloc {
-  height: auto;
-  margin: 4rem;
-  padding: 0 0rem;
+  margin: 3rem;
+  margin-top: 2.5rem;
 }
 
 #heberge_droit_titreETicone_bloc {
   display: flex;
   justify-content: space-between;
-  padding: 1.1rem;
   margin-bottom: 1.5rem;
+  margin-top: 3.5rem;
+  line-height: 1.7rem;
 }
 
 #heberge_droit_titre {
@@ -444,7 +446,7 @@ h3 {
   padding: 0.4rem;
   border-radius: 2rem;
   box-shadow: 1px 1px 10px -3px rgb(162, 162, 162);
-  margin-bottom: 3.8rem;
+  margin-bottom: 3rem;
   display: flex;
   width: 33rem;
   height: 13rem;
@@ -506,9 +508,12 @@ h3 {
   margin-bottom: 0rem;
 }
 
+#activites_titre {
+  margin-left: 3rem;
+}
+
 #activites_ensemble_carte_bloc {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 3.2rem;
 }
