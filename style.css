@@ -272,11 +272,12 @@ p {
 #icone_information {
   font-size: 1.2rem;
   height: 2rem;
-  width: 1.5rem;
+ width: 1.5rem;
   border: 1px solid rgb(208, 208, 208);
   border-radius: 50%;
   padding-left: 1rem;
   padding-top: 0.5rem;
+ 
 }
 
 #info_texte_bloc p {
@@ -505,10 +506,9 @@ h3 {
 /* SECTION ACTIVITES */
 
 #activites_bloc {
-  margin-top: 3.5rem;
-  position: relative;
-  left: -1.7%;
-  width: 103.5%;
+  width: 100%;
+  margin: 5rem auto;
+  margin-bottom: 0rem;
 }
 
 #activites_titre {
@@ -928,6 +928,7 @@ RESPONSIVE MOBILE
   #info_bloc i {
     margin-left: 1rem;
   }
+
 
   /*SECTION HEBERGEMENTS*/
 
