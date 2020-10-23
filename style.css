@@ -303,7 +303,6 @@ p {
   text-decoration: none;
   color: #000;
   margin: 2rem auto;
-
 }
 
 .heberge_gauche_carte_bloc {
@@ -500,6 +499,18 @@ h3 {
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 3.2rem;
+}
+
+#activites_gauche_bloc {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
+}
+
+#activites_droit_bloc {
+  display: flex;
+  justify-content: space-around;
+  flex: 1;
 }
 
 #activites_ensemble_carte_bloc a {
@@ -957,6 +968,13 @@ h3 {
     align-items: center;
   }
 
+  #activites_gauche_bloc {
+    display: block;
+  }
+
+  #activites_droit_bloc {
+    display: block;
+  }
   .colonne_responsive {
     width: 33rem;
     padding: 0 1rem;
