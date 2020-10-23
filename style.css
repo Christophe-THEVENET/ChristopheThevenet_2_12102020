@@ -1,3 +1,7 @@
+/** {
+  border: red solid 1px;
+}
+*/
 html {
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
@@ -16,7 +20,7 @@ body {
 
 #page {
   max-width: 145rem;
-  width: 100%;
+  width: 99%;
   margin: 0 auto;
   padding-bottom: 1rem;
 }
@@ -272,12 +276,11 @@ p {
 #icone_information {
   font-size: 1.2rem;
   height: 2rem;
- width: 1.5rem;
+  width: 1.5rem;
   border: 1px solid rgb(208, 208, 208);
   border-radius: 50%;
   padding-left: 1rem;
   padding-top: 0.5rem;
- 
 }
 
 #info_texte_bloc p {
@@ -506,9 +509,11 @@ h3 {
 /* SECTION ACTIVITES */
 
 #activites_bloc {
-  width: 100%;
   margin: 5rem auto;
   margin-bottom: 0rem;
+  position: relative;
+  width: 103%;
+  left: -1.5%;
 }
 
 #activites_titre {
@@ -781,6 +786,10 @@ RESPONSIVE TABLETTE
   #filtre_bloc {
     width: 80%;
   }
+
+  #footer_bloc div {
+    margin: 2rem;
+  }
 }
 /*
 
@@ -822,7 +831,7 @@ RESPONSIVE MOBILE
 
   #menu_bloc {
     position: absolute;
-    width: 100%;
+    width: 93%;
     height: 10rem;
     margin-bottom: 2rem;
     margin-top: -2rem;
@@ -929,7 +938,6 @@ RESPONSIVE MOBILE
     margin-left: 1rem;
   }
 
-
   /*SECTION HEBERGEMENTS*/
 
   #heberge_bloc {
@@ -961,7 +969,7 @@ RESPONSIVE MOBILE
 
   .heberge_gauche_carte_bloc {
     width: 33rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0rem auto;
   }
 
   .heberge_img_gauche_bloc {
@@ -995,11 +1003,13 @@ RESPONSIVE MOBILE
   .heberge_droit_carte_texte_bloc h4 {
     font-size: 1.5rem;
   }
+
   .heberge_droit_carte_texte {
     font-size: 1.3rem;
     margin-top: 2rem;
     margin-bottom: 4rem;
   }
+
   .heberge_droit_carte_texte_bloc {
     width: 50%;
   }
@@ -1007,7 +1017,15 @@ RESPONSIVE MOBILE
   .heberge_img_droit_bloc {
     width: 40%;
   }
+
   /* SECTION ACTIVITES*/
+
+  #activites_bloc {
+    width: 100%;
+    margin: 5rem auto;
+    margin-bottom: 0rem;
+    position: initial;
+  }
 
   #activites_bloc h2 {
     margin-left: 2rem;
