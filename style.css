@@ -1,7 +1,3 @@
-/** {
-  border: red solid 1px;
-}
-*/
 html {
   font-size: 62.5%;
   font-family: "Raleway", sans-serif;
@@ -22,7 +18,7 @@ body {
   max-width: 145rem;
   width: 99%;
   margin: 0 auto;
-  padding-bottom: 1rem;
+  /*padding-bottom: 1rem;*/
 }
 
 #page_marge {
@@ -190,7 +186,10 @@ p {
   font-family: "raleway";
   font-size: 1.6rem;
   padding-left: 2rem;
+  outline-style: none;
 }
+
+
 
 /*filtre 4 choix*/
 
@@ -375,7 +374,7 @@ h3 {
   font-weight: bolder;
 }
 
-/* activites images en background */
+/* hébergement images en background */
 
 .cannebiere_img {
   background-image: url(img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
@@ -959,6 +958,9 @@ RESPONSIVE MOBILE
   #hebergement_gauche_titre {
     margin-top: 3rem;
     margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 
   #heberge_gauche_ensemble_carte {
@@ -969,7 +971,7 @@ RESPONSIVE MOBILE
 
   .heberge_gauche_carte_bloc {
     width: 33rem;
-    margin-bottom: 0rem auto;
+    margin: 1rem auto;
   }
 
   .heberge_img_gauche_bloc {
@@ -977,7 +979,49 @@ RESPONSIVE MOBILE
   }
 
   h3 {
-    margin-left: 4rem;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: start;
+    
+  }
+
+  /* hébergement images en background */
+
+  .cannebiere_img {
+    background-image: url(img_hebergements/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: 33rem;
+    background-position-y: -5rem;
+  }
+
+  .hotel_du_port_img {
+    background-image: url(img_hebergements/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: 33rem;
+    background-position-y: -5rem;
+  }
+
+  .mouettes_img {
+    background-image: url(img_hebergements/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: 33rem;
+    background-position-y: -5rem;
+  }
+
+  .hotel_de_la_mer_img {
+    background-image: url(img_hebergements/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: 33rem;
+    background-position-y: -11rem;
+  }
+
+  .auberge_panier_img {
+    background-image: url(img_hebergements/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-size: 33rem;
+    background-position-y: -5rem;
+  }
+
+  .hotel_amina_img {
+    background-image: url(img_hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: 33rem;
+    background-position-y: 30rem;
   }
 
   /* BLOC DROIT */
@@ -995,6 +1039,11 @@ RESPONSIVE MOBILE
     padding-bottom: 2rem;
   }
 
+  #heberge_droit_titreETicone_bloc {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .heberge_droit_carte_bloc {
     width: 33rem;
     margin-bottom: 1.5rem;
@@ -1022,20 +1071,21 @@ RESPONSIVE MOBILE
 
   #activites_bloc {
     width: 100%;
-    margin: 5rem auto;
-    margin-bottom: 0rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     position: initial;
   }
 
-  #activites_bloc h2 {
-    margin-left: 2rem;
-    margin-bottom: -1rem;
+  #activites_titre {
+    margin: 0;
+    text-align: center;
   }
 
   #activites_ensemble_carte_bloc {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
   }
 
   #activites_gauche_bloc {
@@ -1094,7 +1144,7 @@ RESPONSIVE MOBILE
     background-size: 100%;
     height: 13rem;
     background-position-y: 20rem;
-    background-position-x: 34rem;
+    background-position-x: 33rem;
   }
 
   .calanques_img {
@@ -1108,8 +1158,8 @@ RESPONSIVE MOBILE
 
   .notre_dame_img {
     background-image: url(img_activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
-    background-size: 30rem;
-    background-position-y: 19rem;
+    background-size: 35rem;
+    background-position-y: 21rem;
   }
 
   .longchamp_img {
