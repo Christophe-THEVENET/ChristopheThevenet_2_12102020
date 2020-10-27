@@ -139,7 +139,6 @@ p {
 }
 
 #outil_icone_div {
-  height: 100%;
   padding: 0;
   margin: 0;
   flex: 10%;
@@ -156,14 +155,12 @@ p {
 }
 
 #outil_champ_div {
-  height: 100%;
   margin: 0;
   padding: 0;
   flex: 50%;
 }
 
 #outil_bouton_div {
-  height: 100%;
   margin: 0;
   padding: 0;
   flex: 30%;
@@ -177,6 +174,13 @@ p {
   border-bottom-right-radius: 1.5rem;
 }
 
+#icone-loupe {
+  font-size: 2rem;
+  color: white;
+  padding-top: 1.5rem;
+  display: none;
+}
+
 #champ {
   height: 100%;
   width: 100%;
@@ -188,8 +192,6 @@ p {
   padding-left: 2rem;
   outline-style: none;
 }
-
-
 
 /*filtre 4 choix*/
 
@@ -872,28 +874,34 @@ RESPONSIVE MOBILE
 
   #outil_recherche_bloc {
     margin: auto;
-    width: 30rem;
+    width: 33rem;
     padding-top: 1rem;
     border: 1px solid var(--gris);
     padding: 0;
     border-radius: 1.5rem;
   }
 
-  #bouton {
-    font-size: 0;
+  #outil_icone_div {
+    flex: 0.8;
   }
 
   #outil_bouton_div {
-    flex: 1%;
+    flex: 0.4;
     padding-right: 2.5rem;
     border-top-left-radius: 1.5rem;
     border-bottom-left-radius: 1.5rem;
   }
 
-  #bouton::before {
-    content: url(logo/search-3-32.png);
-    position: absolute;
-    margin-top: 1rem;
+  #bouton-rechercher {
+    display: none;
+  }
+
+  #icone-loupe {
+    display: initial;
+    font-size: 1.6rem;
+    position: relative;
+    margin-left: 70%;
+    line-height: 5.2rem;
   }
 
   /* SECTION FILTRES 4 CHOIX */
@@ -983,7 +991,6 @@ RESPONSIVE MOBILE
     margin-left: auto;
     margin-right: auto;
     text-align: start;
-    
   }
 
   /* hébergement images en background */
