@@ -16,16 +16,14 @@ body {
 
 #page {
   max-width: 145rem;
-  width: 99%;
   margin: 0 auto;
-  /*padding-bottom: 1rem;*/
 }
 
 #page_marge {
   margin: 0 5rem;
 }
 
-/* HEADER */
+/* -------------- HEADER ------------------- */
 
 #header_bloc {
   height: 9rem;
@@ -33,39 +31,32 @@ body {
 }
 
 #logo_bloc {
-  display: flex;
-  flex: 69%;
-  padding-top: 3.5rem;
+  flex: 1;
+  margin-top: 4rem;
 }
 
 #menu_total_bloc {
   display: flex;
-  justify-content: space-between;
 }
+
 #menu_bloc {
-  flex: 31%;
-  height: 100%;
   margin: 0;
   padding: 0 2rem;
 }
 
 #menu_bloc ul {
   display: flex;
-  justify-content: space-between;
   list-style-type: none;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 #menu_bloc ul li {
-  flex: 33.3%;
-  padding: 0 2rem;
+  flex: 1;
+  padding: 0 3rem;
 }
 
 .menu_lien_bloc {
-  width: 100%;
-  height: 100%;
   margin: 0;
   text-align: center;
   line-height: 11rem;
@@ -85,9 +76,7 @@ body {
 .menu_lien_bloc a {
   text-decoration: none;
   display: block;
-  height: 100%;
   color: black;
-  font-family: "Raleway", sans-serif;
   font-size: 1.7rem;
 }
 
@@ -101,7 +90,7 @@ body {
 
 #lien_inscrire {
   color: var(--bleu);
-  font-weight: 900;
+  font-weight: 600;
   text-shadow: 0px -1px 1px rgb(121, 121, 121);
   text-decoration: none;
   font-size: 1.7rem;
@@ -798,7 +787,7 @@ RESPONSIVE TABLETTE
 
 
 
-RESPONSIVE MOBILE
+--------------------RESPONSIVE MOBILE--------------------
 
 
 
@@ -808,19 +797,21 @@ RESPONSIVE MOBILE
 */
 
 @media screen and (max-width: 719px) {
-  /* HEADER */
+
 
   #page_marge {
     margin: 0;
   }
 
+
+     
+  /*--------HEADER------------------------ */
+
+
+
   #header_bloc {
     flex-direction: column;
-    margin-bottom: 7rem;
-  }
-
-  #logo_bloc {
-    margin-left: 1rem;
+    margin-bottom: 10rem;
   }
 
   #lien_inscrire_bloc {
@@ -830,15 +821,20 @@ RESPONSIVE MOBILE
     text-align: right;
   }
 
+  #menu_total_bloc {
+    height: 8rem;
+ }
+
   #menu_bloc {
     position: absolute;
     width: 93%;
-    height: 10rem;
-    margin-bottom: 2rem;
     margin-top: -2rem;
     padding: 1rem;
   }
-
+  
+ #logo_bloc {
+   margin-left: 2rem;
+ } 
   .menu_lien_bloc:hover {
     border-bottom: 0.2rem solid var(--bleu);
     border-top: none;
@@ -846,13 +842,13 @@ RESPONSIVE MOBILE
   }
 
   .menu_lien_bloc a:hover {
-    margin: 0;
+    margin-top: 0rem;
   }
 
   /* SECTION RECHERCHE */
 
   #recherche_bloc {
-    margin-top: -1rem;
+    margin-top: -1.5rem;
   }
 
   #filtre_texte_bloc {
@@ -874,7 +870,7 @@ RESPONSIVE MOBILE
 
   #outil_recherche_bloc {
     margin: auto;
-    width: 33rem;
+    width: 31rem;
     padding-top: 1rem;
     border: 1px solid var(--gris);
     padding: 0;
