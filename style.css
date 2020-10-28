@@ -499,14 +499,10 @@ h2 {
   background-position-x: -1.5rem;
 }
 
-/* SECTION ACTIVITES */
+/* -------------------------------SECTION ACTIVITES------------------------------*/
 
 #activites_bloc {
-  margin: 5rem auto;
-  margin-bottom: 0rem;
-  position: relative;
-  width: 103%;
-  left: -1.5%;
+  margin-top: 5rem;
 }
 
 #activites_titre {
@@ -521,14 +517,21 @@ h2 {
 
 #activites_gauche_bloc {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex: 1;
+  padding-right: 1.2%;
 }
 
 #activites_droit_bloc {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: 0 auto;
   flex: 1;
+  padding-left: 1.2%;
+}
+
+.activites_grande_carte_bloc {
+  margin-right: 0.5rem;
 }
 
 #activites_ensemble_carte_bloc a {
@@ -538,33 +541,27 @@ h2 {
 
 /* Vieux Port carte */
 
-.colonne_1 {
+.vieux_port_bloc {
   width: 30rem;
   height: 45rem;
-  overflow: hidden;
   border-radius: 1.8rem;
   box-shadow: 1px 1px 10px -3px rgb(162, 162, 162);
   margin-bottom: 4rem;
 }
 
-.vieux_port_image_bloc {
+#vieux_port_image_bloc {
   width: 30rem;
   height: 39rem;
   border-top-left-radius: 1.8rem;
   border-top-right-radius: 1.8rem;
 }
 
-.vieux_port_texte {
+#vieux_port_texte {
   margin-top: 2.2rem;
   margin-left: 2rem;
 }
 
 /* Fort de Pomègues carte */
-
-.colonne_2 {
-  box-shadow: none;
-  margin-bottom: 4rem;
-}
 
 .pomegues_bloc {
   width: 30rem;
@@ -574,13 +571,13 @@ h2 {
   margin-bottom: 5rem;
 }
 
-.pomegues_image_bloc {
+#pomegues_image_bloc {
   height: 18rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
 }
 
-.pomegues_texte {
+#pomegues_texte {
   padding-top: 1.5rem;
   padding-left: 0.5rem;
 }
@@ -594,20 +591,20 @@ h2 {
   border-radius: 1.8rem;
 }
 
-.frioul_image_bloc {
+#frioul_image_bloc {
   height: 10rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
 }
 
-.frioul_texte {
+#frioul_texte {
   padding-top: 1.5rem;
   padding-left: 0.5rem;
 }
 
 /* Parc National des Calanques carte */
 
-.colonne_3 {
+.calanques_bloc {
   width: 30rem;
   height: 45rem;
   overflow: hidden;
@@ -616,24 +613,19 @@ h2 {
   margin-bottom: 4rem;
 }
 
-.calanques_image_bloc {
+#calanques_image_bloc {
   width: 30rem;
   height: 39rem;
   border-top-left-radius: 1.8rem;
   border-top-right-radius: 1.8rem;
 }
 
-.calanques_texte {
+#calanques_texte {
   margin-top: 2.2rem;
   margin-left: 2rem;
 }
 
 /* Notre-Dame-de-la-Garde carte */
-
-.colonne_4 {
-  box-shadow: none;
-  margin-bottom: 4rem;
-}
 
 .notre_dame_bloc {
   width: 30rem;
@@ -643,13 +635,13 @@ h2 {
   margin-bottom: 5rem;
 }
 
-.notre_dame_image_bloc {
+#notre_dame_image_bloc {
   height: 13rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
 }
 
-.notre_dame_texte {
+#notre_dame_texte {
   padding-top: 1.5rem;
   padding-left: 0.5rem;
 }
@@ -664,50 +656,50 @@ h2 {
   margin-bottom: 5rem;
 }
 
-.longchamp_image_bloc {
+#longchamp_image_bloc {
   height: 15rem;
   border-top-right-radius: 1.8rem;
   border-top-left-radius: 1.8rem;
 }
 
-.longchamp_texte {
+#longchamp_texte {
   padding-top: 1.5rem;
   padding-left: 0.5rem;
 }
 
 /* images en background */
 
-.vieux_port_img {
+#vieux_port_image_bloc {
   background-image: url(img_activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
   background-size: 65rem;
   background-position-x: 110rem;
 }
 
-.pomegues_img {
+#pomegues_image_bloc {
   background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
   background-size: 30rem;
   background-position-y: 33rem;
 }
 
-.frioul_img {
+#frioul_image_bloc {
   background-image: url(img_activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
   background-size: 30rem;
   background-position-y: 17.5rem;
 }
 
-.calanques_img {
+#calanques_image_bloc {
   background-image: url(img_activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
   background-size: 65rem;
   background-position-x: 110rem;
 }
 
-.notre_dame_img {
+#notre_dame_image_bloc {
   background-image: url(img_activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
   background-size: 30rem;
   background-position-y: 19rem;
 }
 
-.longchamp_img {
+#longchamp_image_bloc {
   background-image: url(img_activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
   background-size: 30rem;
   background-position-x: 30rem;
@@ -745,8 +737,20 @@ h2 {
 /* ----------------------------------MEDIA QUERIES----------------------------------  */
 
 /*
+*/
 
+@media (min-width: 720px) and (max-width: 1370px) {
+  #activites_gauche_bloc {
+    justify-content: space-around;
+    padding-right: 0;
+  }
 
+  #activites_droit_bloc {
+    justify-content: space-around;
+    padding-left: 0;
+  }
+}
+/*
 ------------------------------RESPONSIVE TABLETTE---------------
 
 
@@ -900,7 +904,6 @@ h2 {
     font-size: 1.6rem;
     position: relative;
     margin-left: 70%;
-    line-height: 5.2rem;
   }
 
   /* ---------------SECTION FILTRES 4 CHOIX --------------*/
@@ -1066,7 +1069,6 @@ h2 {
     margin-bottom: 4rem;
   }
 
-  
   /* ----------------------SECTION ACTIVITES------------------------------*/
 
   #activites_bloc {
@@ -1088,19 +1090,18 @@ h2 {
     margin-top: 1rem;
   }
 
+  .activites_grande_carte_bloc {
+    margin-bottom: 3.5rem;
+  }
+
   #activites_gauche_bloc {
     display: block;
+    padding: 0;
   }
 
   #activites_droit_bloc {
     display: block;
-  }
-  .colonne_responsive {
-    width: 33rem;
-    padding: 0 1rem;
-    box-shadow: none;
-    height: auto;
-    margin-bottom: 1rem;
+    padding: 0;
   }
 
   .activites_responsive_carte {
@@ -1121,7 +1122,7 @@ h2 {
 
   /* images en background */
 
-  .vieux_port_img {
+  #vieux_port_image_bloc {
     background-image: url(img_activites/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
     width: 100%;
     height: 13rem;
@@ -1130,7 +1131,7 @@ h2 {
     background-position-y: 44rem;
   }
 
-  .pomegues_img {
+  #pomegues_image_bloc {
     background-image: url(img_activites/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
     width: 100%;
     height: 13rem;
@@ -1139,7 +1140,7 @@ h2 {
     background-position-y: 88rem;
   }
 
-  .frioul_img {
+  #frioul_image_bloc {
     background-image: url(img_activites/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
     background-size: 100%;
     height: 13rem;
@@ -1147,7 +1148,7 @@ h2 {
     background-position-x: 33rem;
   }
 
-  .calanques_img {
+  #calanques_image_bloc {
     background-image: url(img_activites/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
     width: 100%;
     height: 13rem;
@@ -1156,13 +1157,13 @@ h2 {
     background-position-y: 43rem;
   }
 
-  .notre_dame_img {
+  #notre_dame_image_bloc {
     background-image: url(img_activites/florian-wehde-xW9e8gdotxI-unsplash.jpg);
     background-size: 35rem;
     background-position-y: 21rem;
   }
 
-  .longchamp_img {
+  #longchamp_image_bloc {
     background-image: url(img_activites/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
     width: 100%;
     height: 13rem;
