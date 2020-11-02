@@ -23,7 +23,28 @@ body {
   margin: 0 5rem;
 }
 
+h1 {
+  font-size: 2.3rem;
+  font-weight: bolder;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: -1rem;
+  padding-top: 1rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
 /* _______________________________ HEADER _________________________________________________ */
+
+header {
+  margin-bottom: 2.6rem;
+}
 
 #header_bloc {
   height: 9rem;
@@ -96,23 +117,7 @@ body {
   font-size: 1.7rem;
 }
 
-/* ______________________________ SECTION RECHERCHE ________________________________________________- */
-
-#recherche_bloc {
-  margin: 2.5rem 0;
-  height: auto;
-}
-
-h1 {
-  font-size: 2.2rem;
-  font-weight: bolder;
-  margin-bottom: -1rem;
-  padding-top: 1rem;
-}
-
-p {
-  font-size: 1.6rem;
-}
+/* __________________________________ CONTENU DE LA PAGE __________________________________________ */
 
 /*----------outil de recherche de ville--------*/
 
@@ -186,7 +191,7 @@ p {
 #filtre_bloc {
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem 0;
+  margin: 3rem 0;
   width: 75%;
   line-height: 5rem;
 }
@@ -334,12 +339,6 @@ h3 {
   margin-left: 1.5rem;
 }
 
-h2 {
-  font-size: 1.6rem;
-  margin-left: 3rem;
-  margin-top: 3rem;
-}
-
 .heberge_gauche_carte_texte {
   font-size: 1.4rem;
   margin-left: 1.5rem;
@@ -363,6 +362,10 @@ h2 {
   font-weight: bolder;
 }
 
+h4 {
+  font-size: 1.5rem;
+  margin-left: 3rem;
+}
 /* -----hébergement gauche images en background----- */
 
 .cannebiere_img {
@@ -501,10 +504,6 @@ h2 {
 
 #activites_bloc {
   margin-top: 5rem;
-}
-
-#activites_titre {
-  margin-left: 3rem;
 }
 
 #activites_ensemble_carte_bloc {
@@ -717,7 +716,7 @@ h2 {
   flex: 20%;
 }
 
-#footer_bloc h1 {
+#footer_bloc h2 {
   margin-bottom: 3rem;
 }
 
@@ -807,7 +806,7 @@ ____________________________ RESPONSIVE MOBILE _________________________________
 
   #header_bloc {
     flex-direction: column;
-    margin-bottom: 10rem;
+    margin-bottom: 9rem;
   }
 
   #lien_inscrire_bloc {
@@ -841,12 +840,6 @@ ____________________________ RESPONSIVE MOBILE _________________________________
     margin-top: 0rem;
   }
 
-  /*____________________________ SECTION RECHERCHE __________________________________ */
-
-  #recherche_bloc {
-    margin-top: -1.5rem;
-  }
-
   #filtre_texte_bloc {
     width: 10rem;
   }
@@ -861,6 +854,8 @@ ____________________________ RESPONSIVE MOBILE _________________________________
     margin-bottom: 2.5rem;
     margin-left: 2rem;
   }
+
+  /*____________________________ CONTENU DE LA PAGE __________________________________ */
 
   /* ----------------outil recherche------------*/
 
@@ -895,7 +890,7 @@ ____________________________ RESPONSIVE MOBILE _________________________________
     margin-left: 70%;
   }
 
-  /* ----------------------- filtre 4 choix -----------------------*/
+  /* -------------- filtre 4 choix ------------------*/
 
   #filtre_bloc {
     display: flex;
@@ -978,13 +973,6 @@ ____________________________ RESPONSIVE MOBILE _________________________________
     width: 33rem;
   }
 
-  h2 {
-    width: 30rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: start;
-  }
-
   /* hébergement gauche images en background */
 
   .cannebiere_img {
@@ -1021,6 +1009,10 @@ ____________________________ RESPONSIVE MOBILE _________________________________
     background-image: url(img_hebergements/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
     background-size: 33rem;
     background-position-y: 30rem;
+  }
+
+  h4 {
+    margin-left: 10rem;
   }
 
   /* -------------------BLOC DROIT ------------------*/
